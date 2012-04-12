@@ -1,0 +1,11 @@
+
+en:
+  admin:
+    actions:
+      resend_invitation:
+        title: "Resend Invitation"
+        menu: "Resend Invitation for %{model_label} '%{object_label}'"
+        breadcrumb: "Resend Invitation"
+        link: "Resend Invitation"
+        bulk_link: "Resend Invitation selected %{model_label_plural}"
+        done: "Resend Invitationed"
