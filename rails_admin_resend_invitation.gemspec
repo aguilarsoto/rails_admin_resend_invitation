@@ -7,11 +7,11 @@ require "rails_admin_resend_invitation/version"
 Gem::Specification.new do |s|
   s.name        = "rails_admin_resend_invitation"
   s.version     = RailsAdminResendInvitation::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsAdminResendInvitation."
-  s.description = "TODO: Description of RailsAdminResendInvitation."
+  s.authors     = ["Marco V. Aguilar Soto"]
+  s.email       = ["marco@aguilarsoto.com"]
+  s.homepage    = "http://www.aguilarsoto.com"
+  s.summary     = "resend devise invitations"
+  s.description = "this custom action will resend devise invitations to users"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
