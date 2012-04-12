@@ -12,9 +12,19 @@ module RailsAdmin
         RailsAdmin::Config::Actions.register(self)
         
         register_instance_option :member do
-          bindings[:object].resend_confirmation_token
           true
         end
+
+        register_instance_option :visible? do
+          bindings[:abstract_model].model_name == "User"
+        end
+
+        register_instance_option :controller do
+          Proc.new do
+            @object.resend_confirmation_token
+          end
+        end
+
       end
     end
   end
