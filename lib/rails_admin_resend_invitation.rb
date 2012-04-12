@@ -12,6 +12,7 @@ module RailsAdmin
         RailsAdmin::Config::Actions.register(self)
         
         register_instance_option :object_level do
+          @object.resend_confirmation_token
           true
         end
       end
