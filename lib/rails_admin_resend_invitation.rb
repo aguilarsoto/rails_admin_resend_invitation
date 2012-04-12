@@ -11,8 +11,8 @@ module RailsAdmin
       class ResendInvitation < Base
         RailsAdmin::Config::Actions.register(self)
         
-        register_instance_option :object_level do
-          @object.resend_confirmation_token
+        register_instance_option :member do
+          bindings[:object].resend_confirmation_token
           true
         end
       end
