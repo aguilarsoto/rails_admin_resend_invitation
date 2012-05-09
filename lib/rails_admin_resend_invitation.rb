@@ -16,7 +16,7 @@ module RailsAdmin
         end
 
         register_instance_option :visible? do
-          bindings[:abstract_model].model_name == "User"
+          bindings[:abstract_model].model_name == "User" &&  !bindings[:object].confirmed?
         end
 
         register_instance_option :controller do
